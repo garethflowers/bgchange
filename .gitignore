@@ -2,4 +2,8 @@
 .DS_Store
 
 # editor files/folders
-nbproject
+/*.csproj.user
+/*.suo
+/StyleCop.cache
+/bin/
+/obj/

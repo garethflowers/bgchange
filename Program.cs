@@ -7,7 +7,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace GarethFlowers.bgchange
+namespace GarethFlowers.BackgroundChanger
 {
     /// <summary>
     /// Application main Class.
@@ -28,25 +28,68 @@ namespace GarethFlowers.bgchange
         /// <param name="args">Default command-line arguments.</param>
         public static void Main(string[] args)
         {
-            if (!args.Length.Equals(1))
+            if (args == null || args.Length.Equals(0))
             {
-                System.Console.WriteLine("ERROR: image location not defined");
+                System.Console.WriteLine("ERROR: you must specify the image location");
                 return;
             }
 
-            if (!System.IO.File.Exists(args[0]))
+            int style = 2;
+            int tile = 0;
+            string fileName = string.Empty;
+
+            foreach (string arg in args)
             {
-                System.Console.WriteLine("ERROR: image file not found");
-                return;
+                switch (arg.ToUpperInvariant())
+                {
+                    case "/?":
+                        System.Console.WriteLine(string.Empty);
+                        System.Console.WriteLine("Sets the current background image and style.");
+                        System.Console.WriteLine(string.Empty);
+                        System.Console.WriteLine("BGCHANGE [/t | /c | /s] filename");
+                        System.Console.WriteLine(string.Empty);
+                        System.Console.WriteLine("  /T          Tiles the background image across the screen.");
+                        System.Console.WriteLine("  /C          Centers the background image on the screen.");
+                        System.Console.WriteLine("  /S          Stretchs the background image to fill the screen.");
+                        System.Console.WriteLine("  filename    Image filename to apply as a background.");
+                        return;
+                    case "/T":
+                        // tile
+                        style = 0;
+                        tile = 1;
+                        break;
+                    case "/C":
+                        // center
+                        style = 0;
+                        tile = 0;
+                        break;
+                    case "/S":
+                        // stretch
+                        style = 2;
+                        tile = 0;
+                        break;
+                    default:
+                        if (!System.IO.File.Exists(arg))
+                        {
+                            System.Console.WriteLine("ERROR: the image location is invalid");
+                            return;
+                        }
+                        else
+                        {
+                            fileName = arg;
+                        }
+                        break;
+                }
             }
 
             using (Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("Control Panel\\Desktop", true))
             {
-                key.SetValue(@"WallpaperStyle", "1");
-                key.SetValue(@"TileWallpaper", "0");
+                key.SetValue(@"WallpaperStyle", style);
+                key.SetValue(@"TileWallpaper", tile);
+                key.SetValue(@"Wallpaper", fileName);
             }
 
-            NativeMethods.SetBackground(args[0]);
+            NativeMethods.SetBackground(fileName);
         }
     }
 }
