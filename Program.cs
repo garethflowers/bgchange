@@ -7,7 +7,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace GarethFlowers.BackgroundChanger
+namespace garethflowers.BackgroundChanger
 {
     /// <summary>
     /// Application main Class.
@@ -34,8 +34,8 @@ namespace GarethFlowers.BackgroundChanger
                 return;
             }
 
-            int style = 2;
-            int tile = 0;
+            int style = 0;
+            int tile = 1;
             string fileName = string.Empty;
 
             foreach (string arg in args)
@@ -43,10 +43,12 @@ namespace GarethFlowers.BackgroundChanger
                 switch (arg.ToUpperInvariant())
                 {
                     case "/?":
+                    case "-h":
+                    case "--HELP":
                         System.Console.WriteLine(string.Empty);
                         System.Console.WriteLine("Sets the current background image and style.");
                         System.Console.WriteLine(string.Empty);
-                        System.Console.WriteLine("BGCHANGE [/t | /c | /s] filename");
+                        System.Console.WriteLine("BGCHANGE [/T | /C | /S] filename");
                         System.Console.WriteLine(string.Empty);
                         System.Console.WriteLine("  /T          Tiles the background image across the screen.");
                         System.Console.WriteLine("  /C          Centers the background image on the screen.");
@@ -84,8 +86,8 @@ namespace GarethFlowers.BackgroundChanger
 
             using (Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("Control Panel\\Desktop", true))
             {
-                key.SetValue(@"WallpaperStyle", style);
-                key.SetValue(@"TileWallpaper", tile);
+                key.SetValue(@"WallpaperStyle", style.ToString());
+                key.SetValue(@"TileWallpaper", tile.ToString());
                 key.SetValue(@"Wallpaper", fileName);
             }
 
