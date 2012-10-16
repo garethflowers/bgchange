@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GarethFlowers.BackgroundChanger.Properties {
+namespace garethflowers.BackgroundChanger.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace GarethFlowers.BackgroundChanger.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GarethFlowers.BackgroundChanger.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("garethflowers.BackgroundChanger.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

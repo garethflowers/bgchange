@@ -7,7 +7,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace GarethFlowers.BackgroundChanger
+namespace garethflowers.BackgroundChanger
 {
     /// <summary>
     /// Description of NativeMethods.
