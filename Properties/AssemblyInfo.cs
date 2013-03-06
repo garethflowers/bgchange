@@ -7,6 +7,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
+using System;
 using System.Reflection;
 using System.Resources;
 using System.Runtime.InteropServices;
@@ -19,6 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright © Gareth Flowers 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+[assembly: CLSCompliant(true)]
 [assembly: ComVisible(false)]
 [assembly: Guid("5ba49697-827b-4072-abff-7f0723af4146")]
 [assembly: AssemblyVersion("0.4.0.0")]
