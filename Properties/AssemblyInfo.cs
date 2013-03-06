@@ -8,9 +8,8 @@
 //-----------------------------------------------------------------------
 
 using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 using System.Resources;
+using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("BackgroundChanger")]
 [assembly: AssemblyDescription("Background Image Changer")]

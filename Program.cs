@@ -7,10 +7,10 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-using System.Globalization;
-
 namespace GarethFlowers.BackgroundChanger
 {
+    using System.Globalization;
+
     /// <summary>
     /// Application main Class.
     /// </summary>
