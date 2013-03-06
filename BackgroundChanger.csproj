@@ -8,11 +8,11 @@
     <ProjectGuid>{6F4C3AB9-8221-4346-A01D-D216439E33AE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>garethflowers.BackgroundChanger</RootNamespace>
+    <RootNamespace>GarethFlowers.BackgroundChanger</RootNamespace>
     <AssemblyName>bgchange</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>garethflowers.BackgroundChanger.Program</StartupObject>
+    <StartupObject>GarethFlowers.BackgroundChanger.Program</StartupObject>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>

@@ -7,7 +7,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace garethflowers.BackgroundChanger
+namespace GarethFlowers.BackgroundChanger
 {
     /// <summary>
     /// Application main Class.
