@@ -80,6 +80,7 @@ namespace GarethFlowers.BackgroundChanger
                         {
                             fileName = arg;
                         }
+
                         break;
                 }
             }
