@@ -7,7 +7,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace GarethFlowers.BackgroundChanger
+namespace GarethFlowers.BGChange
 {
     using System.Globalization;
 

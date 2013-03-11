@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GarethFlowers.BackgroundChanger.Properties {
+namespace GarethFlowers.BGChange.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
