@@ -4,6 +4,7 @@
 # editor files/folders
 /*.csproj.user
 /*.suo
+/*.fxcop
 /StyleCop.cache
 /bin/
 /obj/
