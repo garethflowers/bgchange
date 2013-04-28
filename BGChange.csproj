@@ -9,7 +9,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GarethFlowers.BGChange</RootNamespace>
-    <AssemblyName>BGChange</AssemblyName>
+    <AssemblyName>bgchange</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>GarethFlowers.BGChange.Program</StartupObject>
