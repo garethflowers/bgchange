@@ -2,9 +2,9 @@
 .DS_Store
 
 # editor files/folders
-/*.csproj.user
-/*.suo
-/*.fxcop
-/StyleCop.cache
-/bin/
-/obj/
+/src/*.csproj.user
+/src/*.suo
+/src/*.fxcop
+/src/StyleCop.cache
+/src/bin/
+/src/obj/
