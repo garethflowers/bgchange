@@ -12,11 +12,11 @@ using System.Reflection;
 using System.Resources;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("BackgroundChanger")]
+[assembly: AssemblyTitle("Background Changer")]
 [assembly: AssemblyDescription("Background Image Changer")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Gareth Flowers")]
-[assembly: AssemblyProduct("BackgroundChanger")]
+[assembly: AssemblyProduct("Background Changer")]
 [assembly: AssemblyCopyright("Copyright © Gareth Flowers 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
