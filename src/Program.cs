@@ -71,14 +71,16 @@ namespace GarethFlowers.BGChange
                         tile = 0;
                         break;
                     default:
-                        if (!System.IO.File.Exists(arg))
+                        string path = System.Environment.ExpandEnvironmentVariables(arg);
+
+                        if (!System.IO.File.Exists(path))
                         {
                             System.Console.WriteLine("ERROR: the image location is invalid");
                             return;
                         }
                         else
                         {
-                            fileName = arg;
+                            fileName = path;
                         }
 
                         break;
