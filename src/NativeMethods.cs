@@ -20,14 +20,14 @@ namespace GarethFlowers.BGChange
         private const int SPI_SETDESKWALLPAPER = 20;
 
         /// <summary>
-        /// Update INI Files Setting.
-        /// </summary>
-        private const int SPIF_UPDATEINIFILE = 1;
-
-        /// <summary>
         /// INI File Settings.
         /// </summary>
         private const int SPIF_SENDWININICHANGE = 2;
+
+        /// <summary>
+        /// Update INI Files Setting.
+        /// </summary>
+        private const int SPIF_UPDATEINIFILE = 1;
 
         /// <summary>
         /// Prevents a default instance of the NativeMethods class from being created.
@@ -42,9 +42,14 @@ namespace GarethFlowers.BGChange
         /// </summary>
         /// <param name="imageLocation">Location of the Background Image.</param>
         /// <returns>Result of setting the background.</returns>
-        public static int SetBackground(string imageLocation)
+        public static bool SetBackground(string imageLocation)
         {
-            return SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, imageLocation, SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
+            if (!SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, imageLocation, SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE))
+            {
+                throw new System.ComponentModel.Win32Exception();
+            }
+
+            return true;
         }
 
         /// <summary>
@@ -56,6 +61,6 @@ namespace GarethFlowers.BGChange
         /// <param name="winIni">INI File Value.</param>
         /// <returns>Result of setting the background.</returns>
         [System.Runtime.InteropServices.DllImport("user32.dll", CharSet = System.Runtime.InteropServices.CharSet.Unicode)]
-        private static extern int SystemParametersInfo(int action, int parameter, string lpvParam, int winIni);
+        private static extern bool SystemParametersInfo(int action, int parameter, string lpvParam, int winIni);
     }
 }
