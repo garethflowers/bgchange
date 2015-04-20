@@ -9,8 +9,6 @@
 
 namespace GarethFlowers.BGChange
 {
-    using System.Globalization;
-
     /// <summary>
     /// Application main Class.
     /// </summary>
@@ -89,8 +87,8 @@ namespace GarethFlowers.BGChange
 
             using (Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("Control Panel\\Desktop", true))
             {
-                key.SetValue(@"WallpaperStyle", style.ToString(CultureInfo.CurrentCulture));
-                key.SetValue(@"TileWallpaper", tile.ToString(CultureInfo.CurrentCulture));
+                key.SetValue(@"WallpaperStyle", style.ToString(System.Globalization.CultureInfo.InvariantCulture));
+                key.SetValue(@"TileWallpaper", tile.ToString(System.Globalization.CultureInfo.InvariantCulture));
                 key.SetValue(@"Wallpaper", fileName);
             }
 
