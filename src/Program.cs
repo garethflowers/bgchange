@@ -54,7 +54,7 @@ namespace GarethFlowers.BGChange
                         System.Console.WriteLine(string.Empty);
                         System.Console.WriteLine("  /T          Tiles the background image across the screen.");
                         System.Console.WriteLine("  /C          Centers the background image on the screen.");
-                        System.Console.WriteLine("  /S          Stretchs the background image to fill the screen.");
+                        System.Console.WriteLine("  /S          Stretches the background image to fill the screen.");
                         System.Console.WriteLine("  filename    Image filename to apply as a background.");
                         return;
                     case "/T":
