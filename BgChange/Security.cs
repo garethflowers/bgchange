@@ -2,6 +2,10 @@
 {
     internal sealed class Security
     {
+        private Security()
+        {
+        }
+
         public static bool IsUserAdministrator()
         {
             bool isAdmin;
