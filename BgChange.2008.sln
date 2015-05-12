@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGChange", "BGChange.csproj", "{6F4C3AB9-8221-4346-A01D-D216439E33AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGChange", "BgChange\BGChange.csproj", "{6F4C3AB9-8221-4346-A01D-D216439E33AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
