@@ -1,11 +1,27 @@
-﻿namespace GarethFlowers.BGChange
+﻿//-----------------------------------------------------------------------
+// <copyright file="Security.cs" company="Gareth Flowers">
+// Copyright (c) Gareth Flowers. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
+namespace GarethFlowers.BGChange
 {
+    /// <summary>
+    /// Provides static functions
+    /// </summary>
     internal sealed class Security
     {
+        /// <summary>
+        /// Prevents a default instance of the <see cref="Security"/> class from being created.
+        /// </summary>
         private Security()
         {
         }
 
+        /// <summary>
+        /// Checks to see if the current user is an administrator.
+        /// </summary>
+        /// <returns>True, if the user is an administrator.</returns>
         public static bool IsUserAdministrator()
         {
             bool isAdmin;

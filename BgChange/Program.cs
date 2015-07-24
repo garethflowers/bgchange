@@ -1,10 +1,7 @@
 ﻿//-----------------------------------------------------------------------
 // <copyright file="Program.cs" company="Gareth Flowers">
-//     Copyright Gareth Flowers. All rights reserved.
+// Copyright (c) Gareth Flowers. All rights reserved.
 // </copyright>
-// <summary>
-// Background Image Changer
-// </summary>
 //-----------------------------------------------------------------------
 
 namespace GarethFlowers.BGChange

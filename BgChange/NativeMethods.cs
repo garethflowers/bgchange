@@ -1,10 +1,7 @@
 ﻿//-----------------------------------------------------------------------
 // <copyright file="NativeMethods.cs" company="Gareth Flowers">
-//     Copyright Gareth Flowers. All rights reserved.
+// Copyright (c) Gareth Flowers. All rights reserved.
 // </copyright>
-// <summary>
-// Background Image Changer
-// </summary>
 //-----------------------------------------------------------------------
 
 namespace GarethFlowers.BGChange
@@ -30,11 +27,10 @@ namespace GarethFlowers.BGChange
         private const int SPIF_UPDATEINIFILE = 1;
 
         /// <summary>
-        /// Prevents a default instance of the NativeMethods class from being created.
+        /// Prevents a default instance of the <see cref="NativeMethods"/> class from being created.
         /// </summary>
         private NativeMethods()
         {
-            // n/a
         }
 
         /// <summary>
